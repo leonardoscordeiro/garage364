@@ -180,6 +180,29 @@ export default function Footer() {
             © {new Date().getFullYear()} Garage 364. Todos os direitos reservados. CNPJ: 60.914.760/0001-36
           </div>
 
+          {/* Assinatura Arka Hub */}
+          <div className="flex items-center gap-2.5">
+            <span>Desenvolvido por</span>
+            <a
+              href="https://arkahub.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Arka Hub"
+              className="flex items-center gap-2.5 group"
+            >
+              <span className="inline-flex items-center justify-center bg-white rounded p-1 transition-transform group-hover:scale-105">
+                <svg width="14" height="14" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M160 380L235 120H200L125 380H160Z" fill="hsl(213,69%,11%)" />
+                  <path d="M260 120L375 380H335L260 210L260 120Z" fill="hsl(213,69%,11%)" />
+                </svg>
+              </span>
+              <span className="flex items-baseline gap-0.5">
+                <span className="font-extrabold tracking-tight text-zinc-200 group-hover:text-white transition-colors">ARKA</span>
+                <span className="font-light text-[hsl(214,70%,60%)]">HUB</span>
+              </span>
+            </a>
+          </div>
+
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors"
