@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, PhoneCall } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -36,13 +37,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="#home" className="flex items-center gap-1 group">
-            <span className="font-extrabold text-2xl sm:text-3xl tracking-wider text-white italic font-display">
-              Garage
-            </span>
-            <span className="font-extrabold text-2xl sm:text-3xl tracking-wider text-[#E31E24] italic font-display ml-1 group-hover:scale-105 transition-transform duration-200">
-              364
-            </span>
+          <Link href="#home" className="flex items-center group">
+            <Image
+              src="/logo.svg"
+              alt="Garage 364"
+              width={240}
+              height={72}
+              className="h-16 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

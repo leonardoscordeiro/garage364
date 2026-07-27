@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowUp, Clock, ExternalLink } from "lucide-react";
 
 export default function Footer() {
@@ -16,13 +17,14 @@ export default function Footer() {
 
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-4 space-y-5">
-            <Link href="#home" className="flex items-center gap-1">
-              <span className="font-extrabold text-2xl sm:text-3xl tracking-wider text-white italic font-display">
-                Garage
-              </span>
-              <span className="font-extrabold text-2xl sm:text-3xl tracking-wider text-[#E31E24] italic font-display ml-1">
-                364
-              </span>
+            <Link href="#home" className="flex items-center">
+              <Image
+                src="/logo.svg"
+                alt="Garage 364"
+                width={140}
+                height={42}
+                className="h-9 w-auto object-contain"
+              />
             </Link>
 
             <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
