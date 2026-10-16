@@ -16,14 +16,14 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-40 scale-105 filter brightness-95 contrast-110"
+          className="w-full h-full object-cover opacity-85 scale-105"
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
         
-        {/* Dark Overlay Gradients for High-Contrast Luxury Look */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/50 to-[#0B0B0B]/75" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0B] via-[#0B0B0B]/50 to-transparent" />
+        {/* Soft Overlay Gradients for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B]/80 via-[#0B0B0B]/10 to-[#0B0B0B]/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B0B0B]/60 via-[#0B0B0B]/15 to-transparent" />
       </div>
 
       {/* Red Ambient Glow Effects */}
